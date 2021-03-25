@@ -20,5 +20,5 @@ jobs:
           git config --local user.name "andyzhou"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          git commit --allow-empty -m "a commit a day keeps a healthy life style away :-)"
+          git commit --allow-empty -m "自动保持 GitHub 提交状态常绿"
           git push
